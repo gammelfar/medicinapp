@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.reinholdtmoller.medicinapp"
-        version   = "6.0">
+        version   = "7.0">
 
     <name>MedicinApp</name>
 
@@ -16,8 +16,8 @@
         Unbound
     </author>
 
-    <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.5" />
+    <gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
     
     <!--
         Enable individual API permissions here.
@@ -34,6 +34,10 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"                value="none"/>
+
+    <preference name="StatusBarOverlaysWebView" value="false" /> 
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.6.3" />          <!-- all: current version of PhoneGap -->
